@@ -1,0 +1,16 @@
+{
+  "name": "media-queries-less-js",
+  "version": "0.0.1",
+  "description": "Compiles a set of media queries to LESS mixins and Javascript MediaQueryLists.",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "coffee -c index.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "async": "^0.8.0"
+  }
+}
