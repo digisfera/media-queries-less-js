@@ -21,7 +21,7 @@
     objList = _.zipObject(_.map(queryMap, function(query, name) {
       return [name, "window.matchMedia('" + query + "')"];
     }));
-    return wrapper("function(){return " + (JSON.stringify(objList, null, 0)) + ";};");
+    return wrapper("(function(){return " + (JSON.stringify(objList, null, 0)) + ";})();");
   };
 
   module.exports = function(queryMap, lessPath, jsPath, opts, done) {

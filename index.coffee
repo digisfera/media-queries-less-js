@@ -10,7 +10,7 @@ queriesToLess = (prefixer, queryMap) ->
 queriesToJs = (wrapper, queryMap) ->
   objList = _.zipObject _.map queryMap, (query, name) ->
     [ name, "window.matchMedia('#{query}')" ]
-  wrapper("function(){return #{JSON.stringify(objList,null,0)};};")
+  wrapper("(function(){return #{JSON.stringify(objList,null,0)};})();")
 
 module.exports = (queryMap, lessPath, jsPath, opts = {}, done = (->)) ->
 
