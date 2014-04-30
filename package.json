@@ -1,6 +1,6 @@
 {
   "name": "media-queries-less-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Compiles a set of media queries to LESS mixins and Javascript MediaQueryLists.",
   "main": "index.js",
   "scripts": {
