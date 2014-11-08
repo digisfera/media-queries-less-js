@@ -12,5 +12,5 @@ var mediaQueriesLessJs = require('media-queries-less-js');
 
 *queryMap* should be an object mapping query names to CSS media queries. Options are the following:
 
-* *cssPrefix*: either a string to prepend to LESS mixin names, or a function receiving a query name and returning a mixin name. Default: `''`.
-* *jsWrapper*: a function that receives the IIFE that generates and returns the Javascript code to output. Default: `''`.
+* *lessPrefix*: either a string to prepend to LESS mixin names, or a function receiving a query name and returning a mixin name. Default: `''`.
+* *jsPrefix*: either a string to prepend to the IIFE that constructs the Javascript media query list, or a function that receives the IIFE and returns the Javascript code to output. Default: `''`.
